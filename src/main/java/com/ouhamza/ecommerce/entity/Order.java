@@ -20,7 +20,7 @@ import java.util.List;
 public class Order {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue
     private Long id;
 
     private String orderTrackingNumber;
@@ -55,7 +55,7 @@ public class Order {
                 orderItems = new ArrayList<>();
             }
             orderItems.add(item);
-            item.setOrder(this);
+           // item.setOrder(this);
         }
     }
 
